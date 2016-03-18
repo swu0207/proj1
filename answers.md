@@ -7,7 +7,7 @@
 # Question 3: What would you name your own Pokemon?
   I'd name my Pikachu Ash Ketchum Jr.
 # Question 4: What did you pass into the redirect_to? If it is a path, what did that path need? If it is not a path, why is it okay not to have a path here?
-  current_trainer
+ I passed the current_trainer into the redirect_to because we want to redirect to the trainer's page and the path is found through the trainer's id.
 # Question 5: Explain how putting this line "flash[:error] = @pokemon.errors.full_messages.to_sentence" shows error messages on your form.
   Within "views/layouts/application.html.erb", messages from the layout (which are usually errors) get rendered and the line will help flash the error messages onto the form so that we can actually see it versus error messages being put in output files.
 # Give us feedback on the project and decal below!
