@@ -13,7 +13,7 @@ class PokemonsController < ApplicationController
     if @pokemon.health <= 0
       @pokemon.destroy
     end
-    redirect_to current_trainer
+    redirect_to trainer_path(id: @pokemon.trainer_id)
   end
 
   def new
